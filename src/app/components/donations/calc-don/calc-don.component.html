@@ -1,0 +1,62 @@
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                    <a class="img-card" href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                        <img src="../../../assets/img/000012664_600x400_c.jpg" />
+                    </a>
+                    <div class="card-content">
+                        <h5 class="card-title">
+                            Veuillez saisir un montant à calculer
+                        </h5>
+                        <button type="button" class="btn btn-success" value="50" (click)="showDivF(50)">50€</button>
+                        <button type="button" class="btn btn-success" value="100" (click)="showDivS(100)">100€</button>
+                        <button type="button" class="btn btn-success" value="150" (click)="showDivT(150)">150€</button>
+                        <input class="btn btn-success" type="number" placeholder="_______" [(ngModel)]="Y" />
+                        <br>
+                        <div class="FirstDiv" *ngIf="currentBtn == 50 && FirstDiv == true">
+                            Le montant après impôt est
+                            <span> {{Result}} €</span>
+                        </div>
+                        <div class="SecondDiv" *ngIf="currentBtn == 100 && SecondtDiv == true">
+                            Le montant après impôt est
+                            <span> {{Result}} €</span>
+                        </div>
+                        <div class="ThirdDiv" *ngIf="currentBtn == 150 && ThirdDiv == true">
+                            Le montant après impôt est
+                            <span> {{Result}} €</span>
+                        </div>
+                        <div class="FourthDiv" *ngIf="FourthDiv == true">
+                            Le montant après impôt est
+                            <span> {{X}} €</span>
+                        </div>
+                        <div>
+
+                        </div>
+                        <!-- <button type="button" class="btn btn-outline-success">Other..</button> -->
+                    </div>
+                    <div class="card-read-more">
+                        <button class="btn btn-link btn-block" (click)="onCalc()">
+                            Calculer
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="PayWay">
+                    Veuillez choisir votre mode de don préféré!
+                </div>
+
+                <a href="https://www.helloasso.com/associations/emilys/formulaires/1/widget" class="btn btn-primary btn-block">Don sécurisé en ligne : <br> Via le site Helloasso.<br> paiement sécurisé par certicode</a>
+                <a [routerLink]="'/DesDons'" class="btn btn-primary btn-lg btn-block">Don par chèque : <br> Adressé au 129 Avenue de Saint-ouen,<br> 75017 Paris</a>
+                <a [routerLink]="'/DesDons'" class="btn btn-primary btn-lg btn-block">Don par virement bancaire : <br>IBAN : FRxx xxxx xxxx xxxx xxxx xxxx xxx <br> BIC : xxxxxxxx</a>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
