@@ -37,6 +37,8 @@ select option:hover {
     background-image: url('../../../assets/img/Contact-us-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(80%);
+    border: none;
 }
 
 #textInput,
@@ -127,21 +129,6 @@ label {
     font-weight: bold;
 }
 
-.darken-pseudo {
-    position: relative;
-}
-
 textarea {
     padding-bottom: 20px;
-}
-
-.darken-pseudo:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    background-color: rgba(28, 29, 28, 0.295)
 }
