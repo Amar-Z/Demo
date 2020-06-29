@@ -52,6 +52,51 @@ h1.heading {
     }
 }
 
+@media (max-width: 360px) {
+    .card-content .btn.btn-success {
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        background-color: rgb(91, 126, 42);
+        display: inline-block;
+        margin-left: 10px;
+        padding: 15px 19px;
+    }
+    .card-content div {
+        padding-top: 8px;
+    }
+}
+
+@media (max-width: 450px) {
+    .card-content .btn.btn-success {
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        background-color: rgb(91, 126, 42);
+        display: inline-block;
+        margin-left: 10px;
+        padding: 15px 19px;
+    }
+    .card-content div {
+        padding-top: 8px;
+    }
+}
+
+@media (max-width: 375px) {
+    .card-content .btn.btn-success {
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        background-color: rgb(91, 126, 42);
+        display: inline-block;
+        margin-left: 10px;
+        padding: 14px 14px;
+    }
+    .card-content div {
+        padding-top: 8px;
+    }
+}
+
 .card {
     display: block;
     margin-bottom: 20px;
