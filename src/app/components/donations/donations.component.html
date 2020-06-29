@@ -29,7 +29,7 @@
             <div class="col-md-6 mx-auto">
                 <form class="p-5" [formGroup]="memberData" (ngSubmit)="onSubmit()">
 
-                    <p class="h4 mb-4 text-center">Veuillez remplir le formulaire!</p>
+                    <p class="h4 mb-4 text-center">Veuillez remplir le formulaire</p>
 
 
                     <input class="form-control mb-4" id="textInput" type="text" formControlName="FirstName" placeholder="Mme/Mr Prénom" required>
@@ -45,7 +45,7 @@
                     id="amount" name="amount" value="" min="0"/>
                   </label><span id="currency"> €</span>
                     <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Courriel" formControlName="email" required>
-                    <button class="btn btn-info btn-block curtainup" type="submit" [disabled]="!memberData.valid" (click)="openDialog()">Submit</button>
+                    <button class="btn btn-info btn-block curtainup" type="submit" [disabled]="!memberData.valid" (click)="openDialog()">Soumettre</button>
                 </form>
             </div>
         </div>

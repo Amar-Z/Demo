@@ -102,6 +102,7 @@ h1.heading {
 
 .card-read-more {
     border-top: 1px solid #D4D4D4;
+    margin-top: 25px;
 }
 
 .card-read-more button {
@@ -123,8 +124,7 @@ h1.heading {
 }
 
 input[type=number] {
-    width: 70px;
-    height: 40px;
+    width: 80px;
 }
 
 .FirstDiv,
@@ -170,4 +170,24 @@ col {
     font-weight: bold;
     text-align: center;
     padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 28px;
+    margin-top: 30px;
+    font-weight: 800;
+}
+
+.curtainup:disabled {
+    background-color: lightgray;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    align-items: center;
+    border-color: rgb(39, 95, 39);
 }

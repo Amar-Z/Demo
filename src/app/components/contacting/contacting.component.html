@@ -41,13 +41,33 @@
 
                     <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail" formControlName="email" required>
 
-
-                    <select id="defaultSelect" class="browser-default custom-select mb-4" formControlName="HelpOrExp" required>
+                    <label for="contact-preference">Modif:</label>
+                    <span>
+                        <ul class="field">
+                            
+                                <li>
+                                    <label>
+                                        <input type="radio" name="HelpOrExp" id="contact-preference" value="Demandez de l'aide" formControlName="HelpOrExp" required> Demadez de l'aide
+                                      </label>
+                    
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="radio" name="HelpOrExp" id="contact-preference" value="Partagez votre expérience" formControlName="HelpOrExp"> Partagez votre expérience
+                                      </label>
+                                    
+                                </li>
+                            
+                            </ul>
+                        
+              
+            </span>
+                    <!-- <select id="defaultSelect" class="browser-default custom-select mb-4" formControlName="HelpOrExp" required>
           <option value="" disabled="" selected="">Aide ou expérience</option>
           <option value="Demandez de l'aide">Demandez de l'aide</option>
           <option value="Racontez-nous votre expérience">Racontez-nous votre expérience</option>
          
-      </select>
+      </select> -->
 
                     <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" formControlName="msgUser" placeholder="Message" required></textarea>
 
@@ -64,7 +84,7 @@
                   </label>
                     </div> -->
 
-                    <button class="btn btn-info btn-block curtainup" type="submit" [disabled]="!userData.valid" (click)="openDialog()">Submit</button>
+                    <button class="btn btn-info btn-block curtainup" type="submit" [disabled]="!userData.valid" (click)="openDialog()">Soumettre</button>
 
                 </form>
             </div>

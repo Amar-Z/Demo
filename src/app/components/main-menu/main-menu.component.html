@@ -1,11 +1,11 @@
 <header class="header">
     <a href="#" class="header__title">
         <ul class="social-network social-circle">
-            <li><a href="#" class="icoRss" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <!-- <li><a href="#" class="icoRss" title="Instagram"><i class="fab fa-instagram"></i></a></li> -->
             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <!-- <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li> -->
             <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
-            <li><a href="#" class="icoLinkedin" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+            <!-- <li><a href="#" class="icoLinkedin" title="Youtube"><i class="fab fa-youtube"></i></a></li> -->
         </ul>
     </a>
     <div class="header__cta">
@@ -48,7 +48,7 @@
             <div class="col-md-3">
                 <div class="Image-Logo">
                     <img class="emily-logo" title="Association pour la protection
-                        et la sécurité en laboratoire" src="./assets/img/EMILYS-LOGO.png">
+                        et la sécurité en laboratoire" src="assets/img/EMILYS-LOGO.png">
                 </div>
             </div>
 
@@ -169,7 +169,7 @@
                     <a [routerLink]="''" class="nav-link">Accueil<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 L'Association
               </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -185,15 +185,10 @@
                     <a a [routerLink]="'/ModeDeDéveloppement'" class="nav-link">La Securité au laboratoire</a>
                 </li>
                 <li class="nav-item">
-                    <a a [routerLink]="'/ModeDeDéveloppement'" class="nav-link">L'Actualités</a>
+                    <a a [routerLink]="'/ModeDeDéveloppement'" class="nav-link">Actualités</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Nous contacter
-              </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a [routerLink]="'/AideOuExpérience'" class="dropdown-item">Demandez de l'aide / Racontez-nous votre expérience</a>
-                    </div>
+                <li class="nav-item">
+                    <a a [routerLink]="'/AideOuExpérience'" class="nav-link">Nous Contacter</a>
                 </li>
             </ul>
         </div>
