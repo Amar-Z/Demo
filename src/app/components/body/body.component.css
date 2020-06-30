@@ -206,6 +206,11 @@ p {
 #minimal-bootstrap-carousel {
     margin-top: 0px;
     position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    overflow: hidden;
 }
 
 #minimal-bootstrap-carousel .carousel-caption {
@@ -233,6 +238,15 @@ p {
     #minimal-bootstrap-carousel .carousel-caption .container {
         max-width: 960px;
     }
+    #minimal-bootstrap-carousel.slider-home-one .carousel-inner .carousel-item {
+        min-height: 1000px;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-color: #222;
+    }
 }
 
 @media (max-width: 991px) {
@@ -256,9 +270,10 @@ p {
     vertical-align: bottom;
 }
 
-#minimal-bootstrap-carousel .carousel-caption .container .box.valign-middle {
+
+/* #minimal-bootstrap-carousel .carousel-caption .container .box.valign-middle {
     vertical-align: middle;
-}
+} */
 
 #minimal-bootstrap-carousel .carousel-caption .container .box .content {
     display: block;
@@ -275,9 +290,9 @@ p {
     visibility: visible !important;
     opacity: 1;
     border: 1px solid #fff;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: 0s !important;
+    -o-transition: 0s !important;
+    transition: 0s !important;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -300,6 +315,15 @@ p {
     .container-fluid {
         padding: 0 !important;
     }
+    #minimal-bootstrap-carousel.slider-home-one .carousel-inner .carousel-item {
+        min-height: 1000px;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-color: #222;
+    }
 }
 
 @media (max-width: 480px) {
@@ -313,6 +337,15 @@ p {
     }
     .container-fluid {
         padding: 0 !important;
+    }
+    #minimal-bootstrap-carousel.slider-home-one .carousel-inner .carousel-item {
+        min-height: 1000px;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-color: #222;
     }
 }
 
@@ -363,6 +396,7 @@ p {
     font-family: 'Josefin Sans';
     -webkit-animation-delay: .5s;
     animation-delay: .5s;
+    margin-top: 20%;
 }
 
 .slider-content-style .content p {

@@ -211,7 +211,7 @@ ul li:hover {
     color: green;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .navbar li {
         margin-left: 3em;
         margin-right: 3em;
@@ -224,6 +224,21 @@ ul li:hover {
     .navbar-toggler-icon:hover {
         color: green;
     }
+    .text {
+        margin-left: 10px;
+        font-size: 26px;
+    }
+    .custom-toggler {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.navbar-dark .navbar-toggler {
+    color: white;
+    font-size: 20px;
+    border: none;
+    font-weight: bolder;
 }
 
 

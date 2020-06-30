@@ -31,7 +31,10 @@ export class AppComponent implements OnInit {
     this.Show_Logout$ = this.CmSvc.Is_Logged_In;
     // this.signalR.initialize();
   }
-
+onActivate(event) {
+    window.scroll(0, 0);
+    
+}
 
 
 }

@@ -30,13 +30,14 @@ select option:hover {
 }
 
 ::placeholder {
-    color: rgb(83, 82, 82);
+    color: white;
 }
 
 .contact {
     background-image: url("../../../../assets/img/member.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(65%);
 }
 
 #currency {
@@ -58,7 +59,7 @@ select option:hover {
 }
 
 label {
-    color: white;
+    color: black;
 }
 
 .buttonfx {

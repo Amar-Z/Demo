@@ -24,7 +24,7 @@ h1.heading {
     color: #505050;
 }
 
-@media (min-width: 450px) {
+@media (max-device-width: 450px) {
     h1.heading {
         font-size: 3.55em;
     }
@@ -33,7 +33,7 @@ h1.heading {
     }
 }
 
-@media (min-width: 760px) {
+@media (max-device-width: 760px) {
     h1.heading {
         font-size: 3.05em;
     }
@@ -42,7 +42,7 @@ h1.heading {
     }
 }
 
-@media (min-width: 900px) {
+@media (max-device-width: 900px) {
     h1.heading {
         font-size: 3.25em;
         margin: 0 0 0.3em;
@@ -52,7 +52,7 @@ h1.heading {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-device-width: 450px) {
     .card-content .btn.btn-success {
         color: white;
         font-size: 17px;
@@ -67,22 +67,7 @@ h1.heading {
     }
 }
 
-@media (max-width: 450px) {
-    .card-content .btn.btn-success {
-        color: white;
-        font-size: 17px;
-        font-weight: bold;
-        background-color: rgb(91, 126, 42);
-        display: inline-block;
-        margin-left: 10px;
-        padding: 15px 19px;
-    }
-    .card-content div {
-        padding-top: 8px;
-    }
-}
-
-@media (max-width: 375px) {
+@media (max-device-width: 375px) {
     .card-content .btn.btn-success {
         color: white;
         font-size: 17px;
@@ -170,6 +155,9 @@ h1.heading {
 
 input[type=number] {
     width: 80px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text;
 }
 
 .FirstDiv,
