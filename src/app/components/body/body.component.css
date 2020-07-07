@@ -297,7 +297,7 @@ p {
     -o-transition: 0s !important;
     transition: 0s !important;
     top: 50%;
-    z-index: 99;
+    z-index: 2;
 }
 
 @media (max-width: 667px) {
@@ -379,7 +379,7 @@ p {
 .slider-content-style .content {
     text-align: center;
     position: relative;
-    z-index: 999;
+    z-index: 3.0;
 }
 
 .slider-content-style .content h3,

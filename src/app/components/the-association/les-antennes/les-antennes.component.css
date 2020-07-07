@@ -132,3 +132,9 @@ p {
 .our_team .team_member .member_img:hover .social_media {
     transform: scale(1);
 }
+
+@media (max-width: 667px) {
+    p {
+        font-size: 1.5em;
+    }
+}
