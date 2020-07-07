@@ -314,6 +314,7 @@ p {
     }
     .container-fluid {
         padding: 0 !important;
+        overflow: hidden;
     }
     /* #minimal-bootstrap-carousel.slider-home-one .carousel-inner .carousel-item {
         min-height: 1000px;
@@ -438,4 +439,5 @@ p {
 
 .container-fluid {
     padding: 0 !important;
+    overflow: hidden;
 }
