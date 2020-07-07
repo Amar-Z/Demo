@@ -40,24 +40,10 @@ userData: FormGroup;
       panelClass: 'custom-dialog-container' });
   }
 
-test() {
-  console.warn(this.userData.value);
-
-  this.submitted = true;
-  if (!this.userData.valid) {
-      return false;
-    } else {
-      alert(JSON.stringify(this.userData.value));
-
-  }
-}
 sendDataAsFormBody() {
-
-console.warn(this.userData.value);
 this.DataService.sendData(this.userData.value).subscribe(
   data => {
-    
-    console.log(JSON.stringify(data));
+    data = this.userData.value;
     this.submitted = true;
     },
     error => {
@@ -65,7 +51,6 @@ this.DataService.sendData(this.userData.value).subscribe(
     }
 
   );
-
 this.submitted = false;
 
 }

@@ -52,7 +52,7 @@ export class FormMemberComponent implements OnInit {
   
     this.DataService.sendMembersData(this.memberData.value).subscribe(
       (data) => {
-        console.log(JSON.stringify(data));
+      data = this.memberData.value;
         this.submitted = true;
         console.log(this.submitted);
       },

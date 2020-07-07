@@ -34,7 +34,8 @@ memberData: FormGroup;
   onSubmit(){
     this.DataService.sendDonationsData(this.memberData.value).subscribe(
       data => {
-          console.log(JSON.stringify(data));
+        data = this.memberData.value;
+      //  JSON.stringify(data);
           this.submitted = true;
         },
         error => {
@@ -48,6 +49,7 @@ memberData: FormGroup;
     this.matDialog.open(DontaionsDialogComponent, {
       panelClass: 'custom-dialog-container' });
   }
+
 
 
 }

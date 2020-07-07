@@ -3,9 +3,11 @@
 }
 
 .h4.mb-4 {
-    font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
+    font-size: 30px;
+    font-family: cursive;
+    color: black;
+    font-weight: bolder;
+    padding-bottom: 20px;
 }
 
 .browser-default {
@@ -30,14 +32,14 @@ select option:hover {
 }
 
 ::placeholder {
-    color: white;
+    color: rgb(26, 24, 24);
 }
 
 .contact {
     background-image: url("../../../../assets/img/member.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(65%);
+    filter: brightness(95%);
 }
 
 #currency {
@@ -60,6 +62,7 @@ select option:hover {
 
 label {
     color: black;
+    font-weight: bold;
 }
 
 .buttonfx {
@@ -102,6 +105,7 @@ label {
     overflow: hidden;
     transition: all .5s;
     margin-bottom: 20px;
+    margin-top: 35px;
 }
 
 .curtainup:enabled {
@@ -124,6 +128,7 @@ label {
     transform-style: preserve-3d;
     cursor: pointer;
     margin-bottom: 20px;
+    margin-top: 35px;
 }
 
 .row {

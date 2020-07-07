@@ -3,9 +3,10 @@
 }
 
 .h4.mb-4 {
-    font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
-    color: Black;
+    font-size: 30px;
+    font-family: cursive;
+    color: wheat;
+    padding-bottom: 20px;
 }
 
 .browser-default {
@@ -21,10 +22,10 @@
 }
 
 #currency {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bolder;
-    font-family: sans-serif;
-    color: rgb(0, 0, 0);
+    font-family: monospace;
+    color: wheat
 }
 
 select option {
@@ -39,11 +40,11 @@ select option:hover {
     background-image: url("../../../assets/img/donations.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(80%);
+    filter: brightness(100%);
 }
 
 ::placeholder {
-    color: rgba(255, 255, 255, 0.87);
+    color: rgb(250, 230, 221);
 }
 
 #textInput,
@@ -56,11 +57,15 @@ select option:hover {
 #VilleInp,
 #amount {
     background-color: transparent;
-    color: rgb(255, 255, 255);
+    color: wheat;
 }
 
 label {
-    color: black;
+    color: wheat;
+}
+
+#amount {
+    width: 100%;
 }
 
 .buttonfx {
@@ -123,6 +128,7 @@ label {
     transition: all .5s;
     transform-style: preserve-3d;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 .row {
